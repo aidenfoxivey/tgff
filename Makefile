@@ -24,9 +24,9 @@ COMPILE := $(CC) -c $(OPTS) $(C_OPTS)
 
 LINK := $(CC) $(OPTS) $(L_OPTS)
 
-############################################################################## 
+##############################################################################
 # Rules
-############################################################################## 
+##############################################################################
 %.o : %.cc
 	@echo "***** Compiling -> $@"
 	@$(COMPILE) $(TO) $@ $<
@@ -40,6 +40,10 @@ tgff: ArgPack.o DBase.o PGraph.o TGraph.o TG.o main.o psprint.o RStd.o RString.o
 	@echo "***** Linking -> $@"
 	@$(LINK) $(TO) $@ $(filter %.o,$^)
 	@echo
+
+clean:
+	@echo "***** Cleaning"
+	@rm -f *.o *.d tgff
 
 ArgPack.o: ArgPack.cc RMath.h RVector.h RStd.h RStd.cct Interface.h \
  RFunctional.h Interface.cct RVector.cct Epsilon.h Epsilon.cct RMath.cct \
