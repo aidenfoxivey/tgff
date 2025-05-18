@@ -5,8 +5,7 @@ Please see ``TGFF: Task Graphs for Free'' by Robert Dick
 and David Rhodes in the 1998 Proceedings of the International
 Workshop Hardware/Software Codesign for more information.
 
-There is a link to the TGFF web page at
-http://ziyang.eecs.northwestern.edu/~dickrp/tools.html
+The paper is included with the source code.
 
 ----
 Building and installing
@@ -70,11 +69,11 @@ A new graph generation algorithm that is highly configurable. It can generate
 series-parallel graphs (groups of strings of nodes) as well as randomly
 connected graphs.
 
-VCG output is supported. 
+VCG output is supported.
 
-Multiple start nodes are supported. 
+Multiple start nodes are supported.
 
-Graphs can be labeled as periodic, aperiod, or a mix of the two. 
+Graphs can be labeled as periodic, aperiod, or a mix of the two.
 
 Relative periods of graphs generated can be specified as decimals instead of
 integers.
@@ -89,7 +88,7 @@ set of nodes.
 Release 2.0
 
 --
-New features: 
+New features:
 
 When TGFF combines multiple uniform random variables (URV) in order to
 produce table entries, the result is filtered to ensure that it is a
